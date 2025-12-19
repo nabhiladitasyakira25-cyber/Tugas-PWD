@@ -1,0 +1,391 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.header {
+    background-color: #ffffff;
+    padding: 15px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+.logo-text {
+    display: flex;
+    align-items: center;
+}
+.logo-text img {
+    height: 40px;
+    margin-right: 10px;
+}
+.logo-text h1 {
+    font-size: 18px;
+    color: #5d3f8c;
+    margin: 0;
+    font-weight: bold;
+}
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    margin-left: 20px;
+    font-size: 14px;
+}
+.main-banner {
+    background-color: #5d3f8c;
+    color: white;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 300px;
+    box-sizing: border-box;
+    background-image: linear-gradient(to right, #5d3f8c 70%, #ff8c00 30%);
+}
+.banner-content {
+    max-width: 50%;
+}
+.banner-text h2 {
+    font-size: 30px;
+    margin: 0 0 10px 0;
+}
+.banner-text button {
+    background-color: #ff8c00;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.search-area {
+    margin-top: -30px;
+    padding: 0 20px;
+}
+.search-box {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    display: flex;
+    align-items: center;
+}
+.dropdown {
+    padding: 10px 15px;
+    background-color: #e6e6fa;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.search-input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-left: none;
+    outline: none;
+    font-size: 16px;
+}
+.search-button {
+    background-color: #5d3f8c;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    font-size: 18px;
+}
+.specific-search {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+.specific-search a {
+    color: #5d3f8c;
+    text-decoration: none;
+}
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 40px 20px 20px 20px;
+}
+.menu-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    transition: transform 0.2s;
+}
+.menu-item:hover {
+    transform: translateY(-5px);
+}
+.menu-item img {
+    height: 60px;
+    margin-bottom: 10px;
+}
+.menu-item p {
+    font-weight: bold;
+    color: #5d3f8c;
+}
+.info-cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px; 
+    margin-bottom: 50px; 
+    gap: 20px;
+}
+.info-card {
+    width: 48%;
+    background-color: #5d3f8c; 
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.info-card-text a {
+    color: #ff8c00;
+    font-weight: bold;
+    text-decoration: none;
+}
+.info-card-icon {
+    font-size: 40px;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    margin-top: 30px;
+}
+.section-header h2 {
+    font-size: 20px;
+    color: #5d3f8c;
+    margin: 0;
+}
+.section-header a {
+    color: #5d3f8c;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* Bidang Ilmu Terpopuler */
+.popular-fields-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+.field-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.field-card-icon {
+    font-size: 30px;
+    color: #ff8c00; /* Placeholder warna ikon */
+}
+.field-card-icon.pendidikan { color: #f06292; } /* Merah muda */
+.field-card-icon.ekonomi { color: #8e24aa; } /* Ungu gelap */
+.field-card-icon.teknik { color: #43a047; } /* Hijau */
+.field-card-content p {
+    margin: 2px 0;
+    font-size: 14px;
+}
+.field-card-content h3 {
+    margin: 0 0 5px 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Statistik Ringkas (Counters) */
+.stats-ringkas-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+.stat-card {
+    color: white;
+    padding: 25px 15px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.stat-card.mahasiswa { background-color: #54c5c2; } /* Tosca */
+.stat-card.dosen { background-color: #ffaa5b; } /* Oranye muda */
+.stat-card.pt { background-color: #57d478; } /* Hijau muda */
+.stat-card.prodi { background-color: #ff69b4; } /* Pink */
+.stat-card h3 {
+    font-size: 24px;
+    margin: 5px 0;
+    font-weight: bold;
+}
+.stat-card p {
+    margin: 0;
+    font-size: 14px;
+}
+.stat-card-info {
+    font-size: 10px;
+    margin-top: 10px;
+}
+
+/* Publikasi & Kegiatan */
+.publikasi-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+.publikasi-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    text-align: center;
+}
+.publikasi-cover {
+    height: 200px; /* Area cover buku/statistik */
+    background-color: #e6e6fa;
+    background-size: cover;
+    background-position: center;
+}
+/* Ikon & Warna Cover Publikasi Disesuaikan */
+.cover-2023 { background-color: #5d3f8c; color: white; display: flex; align-items: center; justify-content: center; font-size: 18px;}
+.cover-2022 { background-color: #54c5c2; color: white; display: flex; align-items: center; justify-content: center; font-size: 18px;}
+.cover-2021 { background-color: #ffaa5b; color: white; display: flex; align-items: center; justify-content: center; font-size: 18px;}
+.cover-2020 { background-color: #333; color: white; display: flex; align-items: center; justify-content: center; font-size: 18px;}
+
+.publikasi-content {
+    padding: 10px;
+}
+.publikasi-content p {
+    font-size: 14px;
+    margin: 5px 0 15px 0;
+}
+.publikasi-content button {
+    background-color: #5d3f8c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    width: 80%;
+    font-weight: bold;
+}
+
+/* Kegiatan */
+.kegiatan-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+.kegiatan-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    width: 100%; 
+}
+.kegiatan-image {
+    height: 150px;
+    background-color: #ccc;
+    background-size: cover;
+    background-position: center;
+}
+.kegiatan-content {
+    padding: 15px;
+}
+.kegiatan-content h4 {
+    font-size: 14px;
+    margin: 0 0 10px 0;
+    color: #5d3f8c;
+    font-weight: bold;
+}
+.kegiatan-content a {
+    color: #ff8c00;
+    text-decoration: none;
+    font-size: 12px;
+}
+/* Card khusus Selamat */
+.kegiatan-selamat {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #5d3f8c;
+    color: white;
+    padding: 10px;
+}
+
+/* Footer */
+.footer {
+    background-color: #5d3f8c;
+    padding: 40px 20px;
+    color: white;
+    margin-top: 40px;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+.footer-left {
+    max-width: 400px;
+}
+.footer-left h4 {
+    margin-top: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+.footer-left p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+.footer-right {
+    text-align: right;
+}
+.footer-right a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 14px;
+}
+.social-icons a {
+    margin-left: 10px;
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+}
+.social-icons {
+    margin-top: 10px;
+}
+.kemendikbud-logo {
+    height: 50px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.kontributor-link {
+    display: block;
+    margin-bottom: 10px;
+}
